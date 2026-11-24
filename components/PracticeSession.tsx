@@ -14,7 +14,8 @@ type Texts = Record<
   "toTopics" | "mistakesHint" | "error" | "loading" | "diffA" | "diffB" | "diffC", string>;
 type Result = { correct: boolean; answer: number; chosen: number; explanation: string };
 
-export function PracticeSession({ topic, texts }: { topic: string; texts: Texts }) {
+/** Решение задач с мгновенной проверкой. topic — практика по теме, без topic — работа над ошибками. */
+export function PracticeSession({ topic, texts, backHref = "/practice" }: { topic?: string; texts: Texts; backHref?: string }) {
   const [attemptId, setAttemptId] = useState<string | null>(null);
   const [total, setTotal] = useState(0);
   const [index, setIndex] = useState(0);
@@ -43,7 +44,10 @@ export function PracticeSession({ topic, texts }: { topic: string; texts: Texts 
   const start = useCallback(async () => {
     setError(false); setFinished(false); setStats({ n: 0, c: 0 });
     try {
-      const r = await post<{ attemptId: string; total: number }>("/api/practice/start", { topic });
+      const r = topic
+        ? await post<{ attemptId: string; total: number }>("/api/practice/start", { topic })
+        : await post<{ attemptId: string | null; total: number }>("/api/mistakes/start");
+      if (!r.attemptId) { setFinished(true); return; }
       setAttemptId(r.attemptId); setTotal(r.total);
       await loadNext(r.attemptId);
     } catch { setError(true); }
@@ -78,10 +82,10 @@ export function PracticeSession({ topic, texts }: { topic: string; texts: Texts 
         <p className="text-4xl" aria-hidden>🎉</p>
         <p className="text-lg font-bold">{texts.done}</p>
         <p>{fmt(texts.score, { c: stats.c, n: stats.n })}</p>
-        {stats.c < stats.n && <p className="text-sm text-hint">{texts.mistakesHint}</p>}
+        {topic && stats.c < stats.n && <p className="text-sm text-hint">{texts.mistakesHint}</p>}
         <div className="flex gap-2">
-          <Link href="/practice" className="flex-1 rounded-xl bg-bg-2 py-3 font-semibold">{texts.toTopics}</Link>
-          <button onClick={start} className="flex-1 rounded-xl bg-btn py-3 font-semibold text-btn-text">{texts.again}</button>
+          <Link href={backHref} className="flex-1 rounded-xl bg-bg-2 py-3 font-semibold">{texts.toTopics}</Link>
+          <button onClick={topic ? start : () => window.location.reload()} className="flex-1 rounded-xl bg-btn py-3 font-semibold text-btn-text">{texts.again}</button>
         </div>
       </div>
     );
