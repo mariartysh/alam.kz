@@ -9,6 +9,7 @@ import { Logo } from "@/components/Logo";
 import { getT } from "@/lib/i18n-server";
 import { getSession } from "@/lib/session";
 import { AutoLogin } from "@/components/AutoLogin";
+import { isAdmin } from "@/lib/users";
 
 export const metadata: Metadata = {
   title: "alam — математическая грамотность ЕНТ",
@@ -40,6 +41,7 @@ export default async function RootLayout({ children }: { children: React.ReactNo
               <Logo />
             </Link>
             <div className="flex items-center gap-3">
+              {session && isAdmin(session.uid) && <Link href="/admin" className="text-sm text-link" aria-label="admin">⚙</Link>}
               {session && <span className="max-w-24 truncate text-sm text-hint">{session.name}</span>}
               <LangSwitch lang={lang} />
             </div>
