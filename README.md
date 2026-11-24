@@ -28,7 +28,7 @@ npm run dev
 - [x] 7. Работа над ошибками (Лейтнер, 1/3/7/14/30 дней)
 - [x] 8. Статистика, стрик, рейтинг недели
 - [x] 9. Админка (/admin, доступ по ADMIN_TG_IDS, импорт/экспорт JSON)
-- [ ] 10. Бот и напоминания
+- [x] 10. Бот (/start, /lang, /reminders) и ежедневные напоминания
 - [ ] 11. Банк задач (~100)
 - [ ] 12. Полировка и деплой
 
@@ -64,3 +64,19 @@ DATABASE_URL=postgres://postgres@127.0.0.1:5432/postgres npm run migrate && npm 
 - импортировать и экспортировать JSON.
 
 Валидация в админке та же, что у `npm run validate-content`. Правки из админки хранятся в БД. Чтобы перенести их в репозиторий, выгрузите JSON и разложите по `content/questions/`.
+
+## Telegram-бот
+1. Создайте бота в @BotFather. Затем:
+   - `/setdomain` → `alam.kz` (нужно для Login Widget);
+   - `/newapp` → Mini App с адресом `https://alam.kz`, если нужна прямая ссылка `t.me/<бот>/<app>`.
+2. В env задайте `BOT_TOKEN`, `WEBHOOK_SECRET`, `NEXT_PUBLIC_BOT_USERNAME`.
+3. После деплоя выполните `npm run setup-bot`. Скрипт выставит webhook `/api/bot`, команды на RU/KZ и кнопку меню.
+
+Команды бота: `/start` (приветствие и кнопка открытия), `/lang`, `/reminders`.
+
+**Напоминания.** Vercel Cron (`vercel.json`) раз в день в 14:00 UTC, то есть в 19:00 по Алматы, вызывает `/api/cron/reminders` с `Authorization: Bearer CRON_SECRET`. Напоминание получают те, кто запустил бота, не выключил напоминания и сегодня ещё не занимался. На тарифе Hobby cron запускается не чаще раза в день. На Pro можно поставить `0 * * * *`: эндпоинт уже учитывает `reminder_hour` пользователя.
+
+Интеграционный тест бота на реальной БД:
+```bash
+TEST_DATABASE_URL=postgres://... npm test
+```

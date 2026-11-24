@@ -11,9 +11,11 @@
     "test": "vitest run",
     "validate-content": "tsx scripts/validate-content.ts",
     "seed": "tsx --env-file-if-exists=.env.local scripts/seed.ts",
-    "migrate": "tsx --env-file-if-exists=.env.local scripts/migrate.ts"
+    "migrate": "tsx --env-file-if-exists=.env.local scripts/migrate.ts",
+    "setup-bot": "tsx --env-file-if-exists=.env.local scripts/setup-bot.ts"
   },
   "dependencies": {
+    "grammy": "^1.38.2",
     "jose": "^6.1.0",
     "katex": "0.16.22",
     "next": "15.5.4",
