@@ -10,12 +10,14 @@
     "typecheck": "tsc --noEmit",
     "test": "vitest run",
     "validate-content": "tsx scripts/validate-content.ts",
-    "seed": "tsx --env-file-if-exists=.env.local scripts/seed.ts"
+    "seed": "tsx --env-file-if-exists=.env.local scripts/seed.ts",
+    "migrate": "tsx --env-file-if-exists=.env.local scripts/migrate.ts"
   },
   "dependencies": {
-    "@supabase/supabase-js": "^2.57.4",
+    "jose": "^6.1.0",
     "katex": "0.16.22",
     "next": "15.5.4",
+    "postgres": "^3.4.7",
     "react": "19.1.1",
     "react-dom": "19.1.1",
     "server-only": "^0.0.1",

@@ -1,18 +1,17 @@
 import "server-only";
-import { createClient, type SupabaseClient } from "@supabase/supabase-js";
+import postgres from "postgres";
 
-let client: SupabaseClient | null = null;
+type Sql = ReturnType<typeof postgres>;
+const g = globalThis as unknown as { __alamSql?: Sql };
 
-/** Серверный клиент Supabase с service-role ключом. В браузер не попадает. */
-export function db(): SupabaseClient {
-  if (client) return client;
-  const url = process.env.SUPABASE_URL;
-  const key = process.env.SUPABASE_SERVICE_ROLE_KEY;
-  if (!url || !key) throw new Error("SUPABASE_URL и SUPABASE_SERVICE_ROLE_KEY не заданы");
-  client = createClient(url, key, { auth: { persistSession: false, autoRefreshToken: false } });
-  return client;
-}
-
-export function hasDb() {
-  return Boolean(process.env.SUPABASE_URL && process.env.SUPABASE_SERVICE_ROLE_KEY);
+/**
+ * Подключение к Postgres (Supabase). На Vercel используйте строку transaction pooler (порт 6543):
+ * prepared statements там не поддерживаются, поэтому prepare: false.
+ */
+export function sql(): Sql {
+  if (g.__alamSql) return g.__alamSql;
+  const url = process.env.DATABASE_URL;
+  if (!url) throw new Error("DATABASE_URL не задан");
+  g.__alamSql = postgres(url, { prepare: false, max: 5, idle_timeout: 20, onnotice: () => {} });
+  return g.__alamSql;
 }

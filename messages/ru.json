@@ -12,5 +12,11 @@
   "mode.stats.desc": "Прогресс по темам и место в рейтинге",
   "common.soon": "Скоро",
   "common.back": "Назад",
-  "common.lang": "Язык"
+  "common.lang": "Язык",
+  "auth.title": "Войди, чтобы сохранять прогресс",
+  "auth.desc": "Вход через Telegram — без паролей и регистрации",
+  "auth.dev": "Войти как тестовый пользователь (dev)",
+  "auth.error": "Не удалось войти. Попробуй ещё раз.",
+  "auth.loading": "Входим через Telegram…",
+  "auth.logout": "Выйти"
 }

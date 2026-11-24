@@ -22,7 +22,7 @@ npm run dev
 - [x] 1. Каркас: тема Telegram, i18n RU/KZ, главная
 - [x] 2. Контент-модель и валидатор (`npm run validate-content`)
 - [x] 3. БД Supabase (`supabase/migrations`, `npm run seed`)
-- [ ] 4. Вход через Telegram
+- [x] 4. Вход через Telegram (Mini App initData + Login Widget, JWT-сессия)
 - [ ] 5. Практика по темам
 - [ ] 6. Пробный ЕНТ
 - [ ] 7. Работа над ошибками
@@ -39,8 +39,20 @@ npm run dev
 
 ## База данных (Supabase)
 1. Создайте проект на supabase.com.
-2. Скопируйте `supabase/migrations/0001_init.sql` в SQL Editor и выполните.
-3. Заполните `SUPABASE_URL` и `SUPABASE_SERVICE_ROLE_KEY` в `.env.local` (Project Settings → API).
+2. В `.env.local` укажите `DATABASE_URL`: Connect → Transaction pooler, порт 6543.
+3. `npm run migrate` применит SQL из `supabase/migrations` (или выполните его вручную в SQL Editor).
 4. `npm run seed` загрузит темы и задачи. `npm run seed -- --force` перезапишет задачи из JSON поверх правок из админки.
 
-Service-role ключ используется только на сервере. RLS включён на всех таблицах, поэтому anon-ключ к данным доступа не даёт.
+Приложение подключается к Postgres напрямую и только с сервера. RLS включён на всех таблицах, поэтому публичные ключи Supabase (anon) доступа к данным не дают.
+
+## Вход
+- В Mini App вход автоматический: `initData` проверяется по HMAC с `BOT_TOKEN`.
+- В браузере используется Telegram Login Widget. Для него нужна команда `/setdomain` в @BotFather с доменом `alam.kz`.
+- Сессия хранится в JWT в httpOnly-cookie (`SESSION_SECRET`, не короче 32 символов).
+- Для локальной разработки: `ALLOW_DEV_LOGIN=1` включает кнопку «Войти как тестовый пользователь». В production она выключена всегда.
+
+### Локальная база для разработки
+Подойдёт любой Postgres 14+:
+```bash
+DATABASE_URL=postgres://postgres@127.0.0.1:5432/postgres npm run migrate && npm run seed
+```
