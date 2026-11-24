@@ -21,7 +21,7 @@ npm run dev
 ## Статус этапов
 - [x] 1. Каркас: тема Telegram, i18n RU/KZ, главная
 - [x] 2. Контент-модель и валидатор (`npm run validate-content`)
-- [ ] 3. БД Supabase
+- [x] 3. БД Supabase (`supabase/migrations`, `npm run seed`)
 - [ ] 4. Вход через Telegram
 - [ ] 5. Практика по темам
 - [ ] 6. Пробный ЕНТ
@@ -36,3 +36,11 @@ npm run dev
 
 ## Формат задачи
 Файлы `content/questions/<тема>.json`, схема описана в `lib/question-schema.ts`. Формулы пишутся в `$...$` (KaTeX), к условию можно приложить таблицу (`table`) и рисунок (`figure`, инлайн-SVG). Порядок вариантов приложение перемешивает при показе, поэтому `answer` можно оставлять 0.
+
+## База данных (Supabase)
+1. Создайте проект на supabase.com.
+2. Скопируйте `supabase/migrations/0001_init.sql` в SQL Editor и выполните.
+3. Заполните `SUPABASE_URL` и `SUPABASE_SERVICE_ROLE_KEY` в `.env.local` (Project Settings → API).
+4. `npm run seed` загрузит темы и задачи. `npm run seed -- --force` перезапишет задачи из JSON поверх правок из админки.
+
+Service-role ключ используется только на сервере. RLS включён на всех таблицах, поэтому anon-ключ к данным доступа не даёт.

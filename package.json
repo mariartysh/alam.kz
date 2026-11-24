@@ -9,13 +9,16 @@
     "lint": "eslint .",
     "typecheck": "tsc --noEmit",
     "test": "vitest run",
-    "validate-content": "tsx scripts/validate-content.ts"
+    "validate-content": "tsx scripts/validate-content.ts",
+    "seed": "tsx --env-file-if-exists=.env.local scripts/seed.ts"
   },
   "dependencies": {
+    "@supabase/supabase-js": "^2.57.4",
     "katex": "0.16.22",
     "next": "15.5.4",
     "react": "19.1.1",
     "react-dom": "19.1.1",
+    "server-only": "^0.0.1",
     "zod": "4.1.11"
   },
   "devDependencies": {
