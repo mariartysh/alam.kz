@@ -8,7 +8,7 @@ import type { TgUser } from "./telegram-auth";
 /** Создаёт/обновляет пользователя и выставляет cookie сессии (и языка при первом входе). */
 export async function loginAs(u: TgUser) {
   const user = await upsertUser(u);
-  await setSessionCookie({ uid: user.tg_id, name: user.first_name });
+  await setSessionCookie({ uid: user.tg_id, name: user.first_name, username: user.username ?? undefined });
   const jar = await cookies();
   if (!jar.get(LANG_COOKIE)) jar.set(LANG_COOKIE, user.lang, { path: "/", maxAge: 31536000, sameSite: "lax" });
   return user;

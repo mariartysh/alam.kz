@@ -10,13 +10,13 @@ import { validateContent } from "./validate-content";
 
 export async function requireAdminPage() {
   const s = await getSession();
-  if (!s || !isAdmin(s.uid)) notFound();
+  if (!s || !isAdmin(s)) notFound();
   return s;
 }
 
 export async function requireAdminApi() {
   const s = await getSession();
-  return s && isAdmin(s.uid) ? s : NextResponse.json({ error: "forbidden" }, { status: 403 });
+  return s && isAdmin(s) ? s : NextResponse.json({ error: "forbidden" }, { status: 403 });
 }
 
 export type AdminQuestion = Question & { status: "draft" | "published" };

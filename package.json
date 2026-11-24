@@ -12,7 +12,8 @@
     "validate-content": "tsx scripts/validate-content.ts",
     "seed": "tsx --env-file-if-exists=.env.local scripts/seed.ts",
     "migrate": "tsx --env-file-if-exists=.env.local scripts/migrate.ts",
-    "setup-bot": "tsx --env-file-if-exists=.env.local scripts/setup-bot.ts"
+    "setup-bot": "tsx --env-file-if-exists=.env.local scripts/setup-bot.ts",
+    "vercel-build": "tsx scripts/migrate.ts && tsx scripts/seed.ts && next build"
   },
   "dependencies": {
     "grammy": "^1.38.2",

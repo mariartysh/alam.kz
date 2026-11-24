@@ -4,9 +4,25 @@ import { sql } from "./db";
 import { fmt, type Lang } from "./i18n";
 import { BOT, type BotKey } from "./bot-texts";
 import { upsertUser } from "./users";
+import { appUrl } from "./app-url";
 
-export function appUrl() {
-  return process.env.NEXT_PUBLIC_APP_URL ?? "https://alam.kz";
+export { appUrl };
+
+let botUsername: string | null = null;
+
+/** Username бота: из NEXT_PUBLIC_BOT_USERNAME или через getMe (кэшируется в памяти процесса). */
+export async function getBotUsername(): Promise<string> {
+  const fromEnv = process.env.NEXT_PUBLIC_BOT_USERNAME?.trim();
+  if (fromEnv) return fromEnv.replace(/^@/, "");
+  if (botUsername) return botUsername;
+  if (!process.env.BOT_TOKEN) return "";
+  try {
+    botUsername = (await getBot().api.getMe()).username;
+  } catch (e) {
+    console.error("getMe failed", e);
+    return "";
+  }
+  return botUsername;
 }
 
 export function openKeyboard(lang: Lang) {

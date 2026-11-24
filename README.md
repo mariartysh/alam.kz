@@ -81,6 +81,16 @@ DATABASE_URL=postgres://postgres@127.0.0.1:5432/postgres npm run migrate && npm 
 TEST_DATABASE_URL=postgres://... npm test
 ```
 
+## Быстрый запуск на vercel.app
+1. **Supabase.** Откройте Connect → Transaction pooler и скопируйте URI (порт 6543), подставив пароль БД. Спецсимволы в пароле нужно percent-encode: `@` → `%40`, `#` → `%23`, `/` → `%2F`.
+2. **Vercel → Environment Variables.** Задайте `DATABASE_URL`, `BOT_TOKEN`, `SESSION_SECRET`, `WEBHOOK_SECRET`, `CRON_SECRET` и `ADMIN_TG_IDS` (например, `@username`). Затем нажмите Deploy.
+   Скрипт `vercel-build` сам применит миграции и загрузит задачи (`npm run migrate && npm run seed && next build`).
+3. Один раз откройте `https://<проект>.vercel.app/api/setup?key=<CRON_SECRET>`. Эндпоинт выставит webhook, команды и кнопку меню и вернёт JSON с результатом.
+4. В @BotFather выполните `/setdomain` → `<проект>.vercel.app`. Это нужно для входа через браузер.
+5. Напишите боту `/start` и нажмите кнопку — приложение откроется, вход пройдёт автоматически.
+
+Функции развёрнуты в регионе `bom1` (Mumbai), рядом с базой Supabase (`vercel.json`). Если база в другом регионе, поменяйте значение.
+
 ## Деплой на Vercel (alam.kz)
 1. **Supabase.** Создайте проект, затем в `.env.local` укажите `DATABASE_URL` (Connect → Transaction pooler, порт 6543) и выполните `npm run migrate && npm run seed`.
 2. **Vercel.** Импортируйте репозиторий, фреймворк — Next.js. В Environment Variables задайте:

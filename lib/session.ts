@@ -5,7 +5,7 @@ import { cookies } from "next/headers";
 export const SESSION_COOKIE = "alam_session";
 const MAX_AGE = 60 * 60 * 24 * 30;
 
-export type Session = { uid: number; name: string };
+export type Session = { uid: number; name: string; username?: string };
 
 function key() {
   const s = process.env.SESSION_SECRET;
@@ -14,7 +14,7 @@ function key() {
 }
 
 export async function createSessionToken(s: Session) {
-  return new SignJWT({ name: s.name })
+  return new SignJWT({ name: s.name, ...(s.username ? { username: s.username } : {}) })
     .setProtectedHeader({ alg: "HS256" })
     .setSubject(String(s.uid))
     .setIssuedAt()
@@ -27,7 +27,8 @@ export async function readSessionToken(token: string | undefined): Promise<Sessi
   try {
     const { payload } = await jwtVerify(token, key(), { algorithms: ["HS256"] });
     const uid = Number(payload.sub);
-    return Number.isSafeInteger(uid) ? { uid, name: String(payload.name ?? "") } : null;
+    if (!Number.isSafeInteger(uid)) return null;
+    return { uid, name: String(payload.name ?? ""), ...(typeof payload.username === "string" ? { username: payload.username } : {}) };
   } catch {
     return null;
   }

@@ -19,6 +19,7 @@ export function LoginPanel({ bot, devLogin, texts }: { bot: string; devLogin: bo
 
   useEffect(() => {
     if (getWebApp()) { setInTelegram(true); return; }
+    if (!bot) return; // бот не настроен — виджет не показываем
     window.onAlamTelegramAuth = async (widget) => {
       const r = await fetch("/api/auth/telegram", {
         method: "POST", headers: { "content-type": "application/json" }, body: JSON.stringify({ widget }),

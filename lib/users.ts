@@ -26,6 +26,4 @@ export async function getUser(id: number): Promise<UserRow | null> {
   return row ?? null;
 }
 
-export function isAdmin(id: number) {
-  return (process.env.ADMIN_TG_IDS ?? "").split(",").map((s) => s.trim()).filter(Boolean).includes(String(id));
-}
+export { isAdmin } from "./admin-check";
