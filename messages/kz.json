@@ -70,5 +70,22 @@
   "mistakes.emptyHint": "Жаттығу мен сынақтағы қателер осында пайда болады.",
   "mistakes.nextDue": "Келесі қайталау: {date}",
   "mistakes.done": "Қайталау аяқталды",
-  "mistakes.again": "Жаңарту"
+  "mistakes.again": "Жаңарту",
+  "stats.title": "Статистика",
+  "stats.streak": "Қатарынан күн",
+  "stats.solved": "Шығарылған есеп",
+  "stats.accuracy": "Дәлдік",
+  "stats.best": "Үздік сынақ",
+  "stats.week": "Апталық белсенділік",
+  "stats.topics": "Тақырыптар бойынша дәлдік",
+  "stats.weak": "әлсіз тақырып",
+  "stats.noData": "жауап жоқ",
+  "stats.leaders": "Апта рейтингі",
+  "stats.leadersHint": "Дүйсенбіден бергі дұрыс жауаптар",
+  "stats.you": "сен",
+  "stats.yourPlace": "Сенің орның: {rank}",
+  "stats.notRanked": "Рейтингке ену үшін есеп шығар",
+  "stats.tasksDay": "{n} есеп",
+  "home.today": "Бүгін шығарылды: {n}",
+  "home.due": "Қайталауға: {n}"
 }

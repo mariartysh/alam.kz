@@ -70,5 +70,22 @@
   "mistakes.emptyHint": "Ошибки из практики и пробников появятся здесь.",
   "mistakes.nextDue": "Следующее повторение: {date}",
   "mistakes.done": "Повторение завершено",
-  "mistakes.again": "Обновить"
+  "mistakes.again": "Обновить",
+  "stats.title": "Статистика",
+  "stats.streak": "Дней подряд",
+  "stats.solved": "Решено задач",
+  "stats.accuracy": "Точность",
+  "stats.best": "Лучший пробник",
+  "stats.week": "Активность за неделю",
+  "stats.topics": "Точность по темам",
+  "stats.weak": "слабая тема",
+  "stats.noData": "нет ответов",
+  "stats.leaders": "Рейтинг недели",
+  "stats.leadersHint": "Правильные ответы с понедельника",
+  "stats.you": "ты",
+  "stats.yourPlace": "Твоё место: {rank}",
+  "stats.notRanked": "Реши задачу, чтобы попасть в рейтинг",
+  "stats.tasksDay": "{n} задач",
+  "home.today": "Сегодня решено: {n}",
+  "home.due": "{n} к повторению"
 }
