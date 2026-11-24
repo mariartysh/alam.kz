@@ -37,6 +37,11 @@ export function validateContent(files: Record<string, unknown> = QUESTION_FILES)
         const texts = [l.stem, l.explanation, ...l.options, ...(l.table ? [...l.table.head, ...l.table.rows.flat()] : [])];
         for (const text of texts) {
           if ((text.match(/\$/g)?.length ?? 0) % 2) errors.push(`${at} ${lang}: непарный $ в «${text.slice(0, 40)}»`);
+          // Латинская буква внутри кириллического слова (или наоборот) — частая невидимая опечатка.
+          const prose = text.replace(/\$[^$]*\$/g, " ");
+          for (const w of prose.match(/[\p{L}]+/gu) ?? []) {
+            if (/[A-Za-z]/.test(w) && /[\u0400-\u04FF]/.test(w)) errors.push(`${at} ${lang}: смешаны латиница и кириллица в слове «${w}»`);
+          }
           for (const seg of splitMath(text)) {
             if (seg.kind !== "math") continue;
             try { katex.renderToString(seg.value, { throwOnError: true }); }
