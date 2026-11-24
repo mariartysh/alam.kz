@@ -1,6 +1,7 @@
 import type { Metadata, Viewport } from "next";
 import Script from "next/script";
 import Link from "next/link";
+import "katex/dist/katex.min.css";
 import "./globals.css";
 import { TelegramProvider } from "@/components/TelegramProvider";
 import { LangSwitch } from "@/components/LangSwitch";

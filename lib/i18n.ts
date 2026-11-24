@@ -18,3 +18,8 @@ export function translator(lang: Lang) {
   const dict = dictionaries[lang];
   return (key: MessageKey) => dict[key] ?? dictionaries.ru[key] ?? key;
 }
+
+/** Подстановка `{name}` в строку. */
+export function fmt(template: string, vars: Record<string, string | number>) {
+  return template.replace(/\{(\w+)\}/g, (_, k) => String(vars[k] ?? `{${k}}`));
+}

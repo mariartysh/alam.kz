@@ -23,7 +23,7 @@ npm run dev
 - [x] 2. Контент-модель и валидатор (`npm run validate-content`)
 - [x] 3. БД Supabase (`supabase/migrations`, `npm run seed`)
 - [x] 4. Вход через Telegram (Mini App initData + Login Widget, JWT-сессия)
-- [ ] 5. Практика по темам
+- [x] 5. Практика по темам
 - [ ] 6. Пробный ЕНТ
 - [ ] 7. Работа над ошибками
 - [ ] 8. Статистика и рейтинг
