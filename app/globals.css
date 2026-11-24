@@ -1,0 +1,67 @@
+@import "tailwindcss";
+
+/* Токены. В Telegram их подменяют переменные --tg-theme-*, в браузере работают свои значения. */
+:root {
+  --accent-brand: #0aa5c2;
+  --gold: #f5b800;
+  --bg: var(--tg-theme-bg-color, #ffffff);
+  --bg-2: var(--tg-theme-secondary-bg-color, #f2f4f7);
+  --text: var(--tg-theme-text-color, #111827);
+  --hint: var(--tg-theme-hint-color, #6b7280);
+  --link: var(--tg-theme-link-color, #0a8fa8);
+  --btn: var(--tg-theme-button-color, var(--accent-brand));
+  --btn-text: var(--tg-theme-button-text-color, #ffffff);
+  --card: var(--tg-theme-section-bg-color, #ffffff);
+  --border: color-mix(in srgb, var(--text) 10%, transparent);
+  --ok: #16a34a;
+  --bad: #dc2626;
+  color-scheme: light;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: var(--tg-theme-bg-color, #0f1115);
+    --bg-2: var(--tg-theme-secondary-bg-color, #171a21);
+    --text: var(--tg-theme-text-color, #f3f4f6);
+    --hint: var(--tg-theme-hint-color, #9ca3af);
+    --link: var(--tg-theme-link-color, #38c3dc);
+    --card: var(--tg-theme-section-bg-color, #1c2029);
+    --ok: #22c55e;
+    --bad: #f87171;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: var(--tg-theme-bg-color, #0f1115);
+  --bg-2: var(--tg-theme-secondary-bg-color, #171a21);
+  --text: var(--tg-theme-text-color, #f3f4f6);
+  --hint: var(--tg-theme-hint-color, #9ca3af);
+  --link: var(--tg-theme-link-color, #38c3dc);
+  --card: var(--tg-theme-section-bg-color, #1c2029);
+  --ok: #22c55e;
+  --bad: #f87171;
+  color-scheme: dark;
+}
+
+@theme inline {
+  --color-bg: var(--bg);
+  --color-bg-2: var(--bg-2);
+  --color-text: var(--text);
+  --color-hint: var(--hint);
+  --color-link: var(--link);
+  --color-btn: var(--btn);
+  --color-btn-text: var(--btn-text);
+  --color-card: var(--card);
+  --color-line: var(--border);
+  --color-ok: var(--ok);
+  --color-bad: var(--bad);
+  --color-gold: var(--gold);
+  --color-brand: var(--accent-brand);
+  --font-sans: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+html, body {
+  background: var(--bg-2);
+  color: var(--text);
+  -webkit-tap-highlight-color: transparent;
+}
