@@ -1,1 +1,268 @@
-[]
+[
+  {
+    "id": "dependence-001",
+    "topic": "dependence",
+    "difficulty": "A",
+    "answer": 0,
+    "ru": {
+      "stem": "На графике — зависимость пути велосипедиста $s$ (км) от времени $t$ (ч). Сколько времени велосипедист стоял на месте?",
+      "options": [
+        "1 ч",
+        "2 ч",
+        "0,5 ч",
+        "3 ч"
+      ],
+      "explanation": "Пока велосипедист стоит, пройденный путь не меняется, и график идёт горизонтально. Это промежуток от 2 до 3 ч, то есть 1 ч.",
+      "figure": "<svg viewBox=\"0 0 320 214\" xmlns=\"http://www.w3.org/2000/svg\" font-size=\"12\" fill=\"currentColor\"><line x1=\"42\" x2=\"308\" y1=\"182.0\" y2=\"182.0\" stroke=\"currentColor\" stroke-opacity=\"0.35\"/><text x=\"36\" y=\"186.0\" text-anchor=\"end\" font-size=\"10\" fill-opacity=\"0.7\">0</text><line x1=\"42\" x2=\"308\" y1=\"150.8\" y2=\"150.8\" stroke=\"currentColor\" stroke-opacity=\"0.12\"/><text x=\"36\" y=\"154.8\" text-anchor=\"end\" font-size=\"10\" fill-opacity=\"0.7\">10</text><line x1=\"42\" x2=\"308\" y1=\"119.6\" y2=\"119.6\" stroke=\"currentColor\" stroke-opacity=\"0.12\"/><text x=\"36\" y=\"123.6\" text-anchor=\"end\" font-size=\"10\" fill-opacity=\"0.7\">20</text><line x1=\"42\" x2=\"308\" y1=\"88.4\" y2=\"88.4\" stroke=\"currentColor\" stroke-opacity=\"0.12\"/><text x=\"36\" y=\"92.4\" text-anchor=\"end\" font-size=\"10\" fill-opacity=\"0.7\">30</text><line x1=\"42\" x2=\"308\" y1=\"57.2\" y2=\"57.2\" stroke=\"currentColor\" stroke-opacity=\"0.12\"/><text x=\"36\" y=\"61.2\" text-anchor=\"end\" font-size=\"10\" fill-opacity=\"0.7\">40</text><line x1=\"42\" x2=\"308\" y1=\"26.0\" y2=\"26.0\" stroke=\"currentColor\" stroke-opacity=\"0.12\"/><text x=\"36\" y=\"30.0\" text-anchor=\"end\" font-size=\"10\" fill-opacity=\"0.7\">50</text><line x1=\"42.0\" x2=\"42.0\" y1=\"26\" y2=\"182\" stroke=\"currentColor\" stroke-opacity=\"0.35\"/><text x=\"42.0\" y=\"196\" text-anchor=\"middle\" font-size=\"10\" fill-opacity=\"0.7\">0</text><line x1=\"108.5\" x2=\"108.5\" y1=\"26\" y2=\"182\" stroke=\"currentColor\" stroke-opacity=\"0.12\"/><text x=\"108.5\" y=\"196\" text-anchor=\"middle\" font-size=\"10\" fill-opacity=\"0.7\">1</text><line x1=\"175.0\" x2=\"175.0\" y1=\"26\" y2=\"182\" stroke=\"currentColor\" stroke-opacity=\"0.12\"/><text x=\"175.0\" y=\"196\" text-anchor=\"middle\" font-size=\"10\" fill-opacity=\"0.7\">2</text><line x1=\"241.5\" x2=\"241.5\" y1=\"26\" y2=\"182\" stroke=\"currentColor\" stroke-opacity=\"0.12\"/><text x=\"241.5\" y=\"196\" text-anchor=\"middle\" font-size=\"10\" fill-opacity=\"0.7\">3</text><line x1=\"308.0\" x2=\"308.0\" y1=\"26\" y2=\"182\" stroke=\"currentColor\" stroke-opacity=\"0.12\"/><text x=\"308.0\" y=\"196\" text-anchor=\"middle\" font-size=\"10\" fill-opacity=\"0.7\">4</text><path d=\"M42.0,182.0 L108.5,135.2 L175.0,88.4 L241.5,88.4 L308.0,26.0\" fill=\"none\" stroke=\"var(--s1)\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><circle cx=\"42.0\" cy=\"182.0\" r=\"4\" fill=\"var(--s1)\" stroke=\"var(--card)\" stroke-width=\"2\"/><circle cx=\"108.5\" cy=\"135.2\" r=\"4\" fill=\"var(--s1)\" stroke=\"var(--card)\" stroke-width=\"2\"/><circle cx=\"175.0\" cy=\"88.4\" r=\"4\" fill=\"var(--s1)\" stroke=\"var(--card)\" stroke-width=\"2\"/><circle cx=\"241.5\" cy=\"88.4\" r=\"4\" fill=\"var(--s1)\" stroke=\"var(--card)\" stroke-width=\"2\"/><circle cx=\"308.0\" cy=\"26.0\" r=\"4\" fill=\"var(--s1)\" stroke=\"var(--card)\" stroke-width=\"2\"/><text x=\"308\" y=\"212\" text-anchor=\"end\" font-size=\"10\" fill-opacity=\"0.7\">t, ч</text><text x=\"4\" y=\"11\" font-size=\"10\" fill-opacity=\"0.7\">s, км</text></svg>"
+    },
+    "kz": {
+      "stem": "Графикте велосипедшінің жүрген жолының $s$ (км) уақытқа $t$ (сағ) тәуелділігі көрсетілген. Велосипедші қанша уақыт бір орында тұрды?",
+      "options": [
+        "1 сағ",
+        "2 сағ",
+        "0,5 сағ",
+        "3 сағ"
+      ],
+      "explanation": "Велосипедші тұрған кезде жүрілген жол өзгермейді, график горизонталь болады. Бұл 2-ден 3 сағатқа дейінгі аралық, яғни 1 сағат.",
+      "figure": "<svg viewBox=\"0 0 320 214\" xmlns=\"http://www.w3.org/2000/svg\" font-size=\"12\" fill=\"currentColor\"><line x1=\"42\" x2=\"308\" y1=\"182.0\" y2=\"182.0\" stroke=\"currentColor\" stroke-opacity=\"0.35\"/><text x=\"36\" y=\"186.0\" text-anchor=\"end\" font-size=\"10\" fill-opacity=\"0.7\">0</text><line x1=\"42\" x2=\"308\" y1=\"150.8\" y2=\"150.8\" stroke=\"currentColor\" stroke-opacity=\"0.12\"/><text x=\"36\" y=\"154.8\" text-anchor=\"end\" font-size=\"10\" fill-opacity=\"0.7\">10</text><line x1=\"42\" x2=\"308\" y1=\"119.6\" y2=\"119.6\" stroke=\"currentColor\" stroke-opacity=\"0.12\"/><text x=\"36\" y=\"123.6\" text-anchor=\"end\" font-size=\"10\" fill-opacity=\"0.7\">20</text><line x1=\"42\" x2=\"308\" y1=\"88.4\" y2=\"88.4\" stroke=\"currentColor\" stroke-opacity=\"0.12\"/><text x=\"36\" y=\"92.4\" text-anchor=\"end\" font-size=\"10\" fill-opacity=\"0.7\">30</text><line x1=\"42\" x2=\"308\" y1=\"57.2\" y2=\"57.2\" stroke=\"currentColor\" stroke-opacity=\"0.12\"/><text x=\"36\" y=\"61.2\" text-anchor=\"end\" font-size=\"10\" fill-opacity=\"0.7\">40</text><line x1=\"42\" x2=\"308\" y1=\"26.0\" y2=\"26.0\" stroke=\"currentColor\" stroke-opacity=\"0.12\"/><text x=\"36\" y=\"30.0\" text-anchor=\"end\" font-size=\"10\" fill-opacity=\"0.7\">50</text><line x1=\"42.0\" x2=\"42.0\" y1=\"26\" y2=\"182\" stroke=\"currentColor\" stroke-opacity=\"0.35\"/><text x=\"42.0\" y=\"196\" text-anchor=\"middle\" font-size=\"10\" fill-opacity=\"0.7\">0</text><line x1=\"108.5\" x2=\"108.5\" y1=\"26\" y2=\"182\" stroke=\"currentColor\" stroke-opacity=\"0.12\"/><text x=\"108.5\" y=\"196\" text-anchor=\"middle\" font-size=\"10\" fill-opacity=\"0.7\">1</text><line x1=\"175.0\" x2=\"175.0\" y1=\"26\" y2=\"182\" stroke=\"currentColor\" stroke-opacity=\"0.12\"/><text x=\"175.0\" y=\"196\" text-anchor=\"middle\" font-size=\"10\" fill-opacity=\"0.7\">2</text><line x1=\"241.5\" x2=\"241.5\" y1=\"26\" y2=\"182\" stroke=\"currentColor\" stroke-opacity=\"0.12\"/><text x=\"241.5\" y=\"196\" text-anchor=\"middle\" font-size=\"10\" fill-opacity=\"0.7\">3</text><line x1=\"308.0\" x2=\"308.0\" y1=\"26\" y2=\"182\" stroke=\"currentColor\" stroke-opacity=\"0.12\"/><text x=\"308.0\" y=\"196\" text-anchor=\"middle\" font-size=\"10\" fill-opacity=\"0.7\">4</text><path d=\"M42.0,182.0 L108.5,135.2 L175.0,88.4 L241.5,88.4 L308.0,26.0\" fill=\"none\" stroke=\"var(--s1)\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><circle cx=\"42.0\" cy=\"182.0\" r=\"4\" fill=\"var(--s1)\" stroke=\"var(--card)\" stroke-width=\"2\"/><circle cx=\"108.5\" cy=\"135.2\" r=\"4\" fill=\"var(--s1)\" stroke=\"var(--card)\" stroke-width=\"2\"/><circle cx=\"175.0\" cy=\"88.4\" r=\"4\" fill=\"var(--s1)\" stroke=\"var(--card)\" stroke-width=\"2\"/><circle cx=\"241.5\" cy=\"88.4\" r=\"4\" fill=\"var(--s1)\" stroke=\"var(--card)\" stroke-width=\"2\"/><circle cx=\"308.0\" cy=\"26.0\" r=\"4\" fill=\"var(--s1)\" stroke=\"var(--card)\" stroke-width=\"2\"/><text x=\"308\" y=\"212\" text-anchor=\"end\" font-size=\"10\" fill-opacity=\"0.7\">t, сағ</text><text x=\"4\" y=\"11\" font-size=\"10\" fill-opacity=\"0.7\">s, км</text></svg>"
+    }
+  },
+  {
+    "id": "dependence-002",
+    "topic": "dependence",
+    "difficulty": "A",
+    "answer": 0,
+    "figure": "<svg viewBox=\"0 0 320 214\" xmlns=\"http://www.w3.org/2000/svg\" font-size=\"12\" fill=\"currentColor\"><line x1=\"42\" x2=\"308\" y1=\"182.0\" y2=\"182.0\" stroke=\"currentColor\" stroke-opacity=\"0.35\"/><text x=\"36\" y=\"186.0\" text-anchor=\"end\" font-size=\"10\" fill-opacity=\"0.7\">0</text><line x1=\"42\" x2=\"308\" y1=\"150.8\" y2=\"150.8\" stroke=\"currentColor\" stroke-opacity=\"0.12\"/><text x=\"36\" y=\"154.8\" text-anchor=\"end\" font-size=\"10\" fill-opacity=\"0.7\">20</text><line x1=\"42\" x2=\"308\" y1=\"119.6\" y2=\"119.6\" stroke=\"currentColor\" stroke-opacity=\"0.12\"/><text x=\"36\" y=\"123.6\" text-anchor=\"end\" font-size=\"10\" fill-opacity=\"0.7\">40</text><line x1=\"42\" x2=\"308\" y1=\"88.4\" y2=\"88.4\" stroke=\"currentColor\" stroke-opacity=\"0.12\"/><text x=\"36\" y=\"92.4\" text-anchor=\"end\" font-size=\"10\" fill-opacity=\"0.7\">60</text><line x1=\"42\" x2=\"308\" y1=\"57.2\" y2=\"57.2\" stroke=\"currentColor\" stroke-opacity=\"0.12\"/><text x=\"36\" y=\"61.2\" text-anchor=\"end\" font-size=\"10\" fill-opacity=\"0.7\">80</text><line x1=\"42\" x2=\"308\" y1=\"26.0\" y2=\"26.0\" stroke=\"currentColor\" stroke-opacity=\"0.12\"/><text x=\"36\" y=\"30.0\" text-anchor=\"end\" font-size=\"10\" fill-opacity=\"0.7\">100</text><line x1=\"42.0\" x2=\"42.0\" y1=\"26\" y2=\"182\" stroke=\"currentColor\" stroke-opacity=\"0.35\"/><text x=\"42.0\" y=\"196\" text-anchor=\"middle\" font-size=\"10\" fill-opacity=\"0.7\">0</text><line x1=\"95.2\" x2=\"95.2\" y1=\"26\" y2=\"182\" stroke=\"currentColor\" stroke-opacity=\"0.12\"/><text x=\"95.2\" y=\"196\" text-anchor=\"middle\" font-size=\"10\" fill-opacity=\"0.7\">2</text><line x1=\"148.4\" x2=\"148.4\" y1=\"26\" y2=\"182\" stroke=\"currentColor\" stroke-opacity=\"0.12\"/><text x=\"148.4\" y=\"196\" text-anchor=\"middle\" font-size=\"10\" fill-opacity=\"0.7\">4</text><line x1=\"201.6\" x2=\"201.6\" y1=\"26\" y2=\"182\" stroke=\"currentColor\" stroke-opacity=\"0.12\"/><text x=\"201.6\" y=\"196\" text-anchor=\"middle\" font-size=\"10\" fill-opacity=\"0.7\">6</text><line x1=\"254.8\" x2=\"254.8\" y1=\"26\" y2=\"182\" stroke=\"currentColor\" stroke-opacity=\"0.12\"/><text x=\"254.8\" y=\"196\" text-anchor=\"middle\" font-size=\"10\" fill-opacity=\"0.7\">8</text><line x1=\"308.0\" x2=\"308.0\" y1=\"26\" y2=\"182\" stroke=\"currentColor\" stroke-opacity=\"0.12\"/><text x=\"308.0\" y=\"196\" text-anchor=\"middle\" font-size=\"10\" fill-opacity=\"0.7\">10</text><path d=\"M42.0,150.8 L95.2,119.6 L148.4,88.4 L201.6,57.2 L254.8,26.0 L308.0,26.0\" fill=\"none\" stroke=\"var(--s1)\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><circle cx=\"42.0\" cy=\"150.8\" r=\"4\" fill=\"var(--s1)\" stroke=\"var(--card)\" stroke-width=\"2\"/><circle cx=\"95.2\" cy=\"119.6\" r=\"4\" fill=\"var(--s1)\" stroke=\"var(--card)\" stroke-width=\"2\"/><circle cx=\"148.4\" cy=\"88.4\" r=\"4\" fill=\"var(--s1)\" stroke=\"var(--card)\" stroke-width=\"2\"/><circle cx=\"201.6\" cy=\"57.2\" r=\"4\" fill=\"var(--s1)\" stroke=\"var(--card)\" stroke-width=\"2\"/><circle cx=\"254.8\" cy=\"26.0\" r=\"4\" fill=\"var(--s1)\" stroke=\"var(--card)\" stroke-width=\"2\"/><circle cx=\"308.0\" cy=\"26.0\" r=\"4\" fill=\"var(--s1)\" stroke=\"var(--card)\" stroke-width=\"2\"/><text x=\"308\" y=\"212\" text-anchor=\"end\" font-size=\"10\" fill-opacity=\"0.7\">t, мин</text><text x=\"4\" y=\"11\" font-size=\"10\" fill-opacity=\"0.7\">T, °C</text></svg>",
+    "ru": {
+      "stem": "На графике — изменение температуры воды $T$ (°C) при нагревании, $t$ — время в минутах. На сколько градусов вода нагревалась за каждую минуту до закипания?",
+      "options": [
+        "10 °C",
+        "20 °C",
+        "5 °C",
+        "8 °C"
+      ],
+      "explanation": "До закипания (за 8 минут) температура выросла с 20 до 100 °C, то есть на 80 °C. За минуту: $80 : 8 = 10$ °C."
+    },
+    "kz": {
+      "stem": "Графикте суды қыздырған кездегі оның температурасының $T$ (°C) өзгерісі көрсетілген, $t$ — уақыт (минут). Қайнағанға дейін су әр минут сайын неше градусқа жылыды?",
+      "options": [
+        "10 °C",
+        "20 °C",
+        "5 °C",
+        "8 °C"
+      ],
+      "explanation": "Қайнағанға дейін (8 минутта) температура 20 °C-тан 100 °C-қа дейін, яғни 80 °C-қа көтерілді. Бір минутта: $80 : 8 = 10$ °C."
+    }
+  },
+  {
+    "id": "dependence-003",
+    "topic": "dependence",
+    "difficulty": "A",
+    "answer": 0,
+    "ru": {
+      "stem": "Из 8 кг яблок получается 3 л сока. Сколько литров сока получится из 20 кг яблок?",
+      "options": [
+        "7,5 л",
+        "6 л",
+        "8 л",
+        "9 л"
+      ],
+      "explanation": "Количество сока пропорционально массе яблок: $\\frac{3}{8} = \\frac{x}{20}$, $x = \\frac{3 \\cdot 20}{8} = 7{,}5$ л."
+    },
+    "kz": {
+      "stem": "8 кг алмадан 3 л шырын алынады. 20 кг алмадан неше литр шырын алынады?",
+      "options": [
+        "7,5 л",
+        "6 л",
+        "8 л",
+        "9 л"
+      ],
+      "explanation": "Шырын мөлшері алманың массасына пропорционал: $\\frac{3}{8} = \\frac{x}{20}$, $x = \\frac{3 \\cdot 20}{8} = 7{,}5$ л."
+    }
+  },
+  {
+    "id": "dependence-004",
+    "topic": "dependence",
+    "difficulty": "A",
+    "answer": 0,
+    "ru": {
+      "stem": "6 рабочих выполняют работу за 12 дней. За сколько дней ту же работу выполнят 9 рабочих, если все работают одинаково?",
+      "options": [
+        "8",
+        "18",
+        "6",
+        "10"
+      ],
+      "explanation": "Объём работы: $6 \\cdot 12 = 72$ человеко-дня. 9 рабочих справятся за $72 : 9 = 8$ дней. Чем больше рабочих, тем меньше дней — это обратная пропорциональность."
+    },
+    "kz": {
+      "stem": "6 жұмысшы жұмысты 12 күнде орындайды. Барлығы бірдей жұмыс істесе, сол жұмысты 9 жұмысшы неше күнде орындайды?",
+      "options": [
+        "8",
+        "18",
+        "6",
+        "10"
+      ],
+      "explanation": "Жұмыс көлемі: $6 \\cdot 12 = 72$ адам-күн. 9 жұмысшы оны $72 : 9 = 8$ күнде орындайды. Жұмысшы көбейген сайын күн азаяды — бұл кері пропорционалдық."
+    }
+  },
+  {
+    "id": "dependence-005",
+    "topic": "dependence",
+    "difficulty": "A",
+    "answer": 0,
+    "ru": {
+      "stem": "Стоимость поездки на такси считается по формуле $C = 500 + 150s$ (тг), где $s$ — расстояние в километрах. Пассажир заплатил 3200 тг. Сколько километров он проехал?",
+      "options": [
+        "18 км",
+        "21 км",
+        "16 км",
+        "20 км"
+      ],
+      "explanation": "$500 + 150s = 3200$, $150s = 2700$, $s = 18$ км."
+    },
+    "kz": {
+      "stem": "Таксимен жүру құны $C = 500 + 150s$ (теңге) формуласымен есептеледі, мұндағы $s$ — километрмен берілген қашықтық. Жолаушы 3200 теңге төледі. Ол неше километр жүрді?",
+      "options": [
+        "18 км",
+        "21 км",
+        "16 км",
+        "20 км"
+      ],
+      "explanation": "$500 + 150s = 3200$, $150s = 2700$, $s = 18$ км."
+    }
+  },
+  {
+    "id": "dependence-006",
+    "topic": "dependence",
+    "difficulty": "B",
+    "answer": 0,
+    "ru": {
+      "stem": "Тариф А: 1000 тг в месяц плюс 5 тг за каждую минуту разговора. Тариф Б: 15 тг за минуту без абонентской платы. При каком числе минут тарифы стоят одинаково и какой из них выгоднее при 150 минутах в месяц?",
+      "options": [
+        "100 мин; при 150 мин выгоднее А",
+        "100 мин; при 150 мин выгоднее Б",
+        "150 мин; тарифы равны",
+        "200 мин; выгоднее Б"
+      ],
+      "explanation": "Стоимость: А — $1000 + 5x$, Б — $15x$. Из $1000 + 5x = 15x$ получаем $x = 100$ мин. При 150 минутах: А — $1000 + 5 \\cdot 150 = 1750$ тг, Б — $15 \\cdot 150 = 2250$ тг, выгоднее А."
+    },
+    "kz": {
+      "stem": "А тарифі: айына 1000 теңге және сөйлесудің әр минуты үшін 5 теңге. Б тарифі: абоненттік ақысыз, минутына 15 теңге. Неше минутта тарифтердің құны бірдей болады және айына 150 минут сөйлескенде қай тариф тиімді?",
+      "options": [
+        "100 мин; 150 минутта А тиімді",
+        "100 мин; 150 минутта Б тиімді",
+        "150 мин; тарифтер тең",
+        "200 мин; Б тиімді"
+      ],
+      "explanation": "Құны: А — $1000 + 5x$, Б — $15x$. $1000 + 5x = 15x$ теңдеуінен $x = 100$ мин. 150 минутта: А — $1000 + 5 \\cdot 150 = 1750$ теңге, Б — $15 \\cdot 150 = 2250$ теңге, А тиімді."
+    }
+  },
+  {
+    "id": "dependence-007",
+    "topic": "dependence",
+    "difficulty": "B",
+    "answer": 0,
+    "figure": "<svg viewBox=\"0 0 320 214\" xmlns=\"http://www.w3.org/2000/svg\" font-size=\"12\" fill=\"currentColor\"><line x1=\"42\" x2=\"308\" y1=\"182.0\" y2=\"182.0\" stroke=\"currentColor\" stroke-opacity=\"0.35\"/><text x=\"36\" y=\"186.0\" text-anchor=\"end\" font-size=\"10\" fill-opacity=\"0.7\">0</text><line x1=\"42\" x2=\"308\" y1=\"143.0\" y2=\"143.0\" stroke=\"currentColor\" stroke-opacity=\"0.12\"/><text x=\"36\" y=\"147.0\" text-anchor=\"end\" font-size=\"10\" fill-opacity=\"0.7\">30</text><line x1=\"42\" x2=\"308\" y1=\"104.0\" y2=\"104.0\" stroke=\"currentColor\" stroke-opacity=\"0.12\"/><text x=\"36\" y=\"108.0\" text-anchor=\"end\" font-size=\"10\" fill-opacity=\"0.7\">60</text><line x1=\"42\" x2=\"308\" y1=\"65.0\" y2=\"65.0\" stroke=\"currentColor\" stroke-opacity=\"0.12\"/><text x=\"36\" y=\"69.0\" text-anchor=\"end\" font-size=\"10\" fill-opacity=\"0.7\">90</text><line x1=\"42\" x2=\"308\" y1=\"26.0\" y2=\"26.0\" stroke=\"currentColor\" stroke-opacity=\"0.12\"/><text x=\"36\" y=\"30.0\" text-anchor=\"end\" font-size=\"10\" fill-opacity=\"0.7\">120</text><line x1=\"42.0\" x2=\"42.0\" y1=\"26\" y2=\"182\" stroke=\"currentColor\" stroke-opacity=\"0.35\"/><text x=\"42.0\" y=\"196\" text-anchor=\"middle\" font-size=\"10\" fill-opacity=\"0.7\">0</text><line x1=\"108.5\" x2=\"108.5\" y1=\"26\" y2=\"182\" stroke=\"currentColor\" stroke-opacity=\"0.12\"/><text x=\"108.5\" y=\"196\" text-anchor=\"middle\" font-size=\"10\" fill-opacity=\"0.7\">10</text><line x1=\"175.0\" x2=\"175.0\" y1=\"26\" y2=\"182\" stroke=\"currentColor\" stroke-opacity=\"0.12\"/><text x=\"175.0\" y=\"196\" text-anchor=\"middle\" font-size=\"10\" fill-opacity=\"0.7\">20</text><line x1=\"241.5\" x2=\"241.5\" y1=\"26\" y2=\"182\" stroke=\"currentColor\" stroke-opacity=\"0.12\"/><text x=\"241.5\" y=\"196\" text-anchor=\"middle\" font-size=\"10\" fill-opacity=\"0.7\">30</text><line x1=\"308.0\" x2=\"308.0\" y1=\"26\" y2=\"182\" stroke=\"currentColor\" stroke-opacity=\"0.12\"/><text x=\"308.0\" y=\"196\" text-anchor=\"middle\" font-size=\"10\" fill-opacity=\"0.7\">40</text><path d=\"M42.0,26.0 L108.5,65.0 L175.0,104.0 L241.5,143.0 L308.0,182.0\" fill=\"none\" stroke=\"var(--s1)\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><circle cx=\"42.0\" cy=\"26.0\" r=\"4\" fill=\"var(--s1)\" stroke=\"var(--card)\" stroke-width=\"2\"/><circle cx=\"108.5\" cy=\"65.0\" r=\"4\" fill=\"var(--s1)\" stroke=\"var(--card)\" stroke-width=\"2\"/><circle cx=\"175.0\" cy=\"104.0\" r=\"4\" fill=\"var(--s1)\" stroke=\"var(--card)\" stroke-width=\"2\"/><circle cx=\"241.5\" cy=\"143.0\" r=\"4\" fill=\"var(--s1)\" stroke=\"var(--card)\" stroke-width=\"2\"/><circle cx=\"308.0\" cy=\"182.0\" r=\"4\" fill=\"var(--s1)\" stroke=\"var(--card)\" stroke-width=\"2\"/><text x=\"308\" y=\"212\" text-anchor=\"end\" font-size=\"10\" fill-opacity=\"0.7\">t, мин</text><text x=\"4\" y=\"11\" font-size=\"10\" fill-opacity=\"0.7\">V, л</text></svg>",
+    "ru": {
+      "stem": "На графике — объём воды $V$ (л) в баке, из которого воду равномерно сливают, $t$ — время в минутах. Через сколько минут после начала в баке останется 45 л?",
+      "options": [
+        "25 мин",
+        "15 мин",
+        "30 мин",
+        "20 мин"
+      ],
+      "explanation": "За 10 минут объём уменьшается на 30 л, то есть на 3 л в минуту: $V = 120 - 3t$. $120 - 3t = 45$, $t = 25$ мин."
+    },
+    "kz": {
+      "stem": "Графикте бірқалыпты босатылып жатқан бактағы су көлемі $V$ (л) көрсетілген, $t$ — уақыт (минут). Басталғаннан кейін неше минуттан соң бакта 45 л су қалады?",
+      "options": [
+        "25 мин",
+        "15 мин",
+        "30 мин",
+        "20 мин"
+      ],
+      "explanation": "10 минутта көлем 30 л-ге, яғни минутына 3 л-ге азаяды: $V = 120 - 3t$. $120 - 3t = 45$, $t = 25$ мин."
+    }
+  },
+  {
+    "id": "dependence-008",
+    "topic": "dependence",
+    "difficulty": "B",
+    "answer": 0,
+    "ru": {
+      "stem": "Автомобиль проезжает расстояние между городами за 3 ч со скоростью 80 км/ч. С какой скоростью нужно ехать, чтобы доехать на 36 минут быстрее?",
+      "options": [
+        "100 км/ч",
+        "96 км/ч",
+        "90 км/ч",
+        "120 км/ч"
+      ],
+      "explanation": "Расстояние: $80 \\cdot 3 = 240$ км. 36 мин = 0,6 ч, новое время: $3 - 0{,}6 = 2{,}4$ ч. Скорость: $240 : 2{,}4 = 100$ км/ч."
+    },
+    "kz": {
+      "stem": "Автокөлік қалалар арасындағы қашықтықты 80 км/сағ жылдамдықпен 3 сағатта жүріп өтеді. 36 минут ерте жету үшін қандай жылдамдықпен жүру керек?",
+      "options": [
+        "100 км/сағ",
+        "96 км/сағ",
+        "90 км/сағ",
+        "120 км/сағ"
+      ],
+      "explanation": "Қашықтық: $80 \\cdot 3 = 240$ км. 36 мин = 0,6 сағ, жаңа уақыт: $3 - 0{,}6 = 2{,}4$ сағ. Жылдамдық: $240 : 2{,}4 = 100$ км/сағ."
+    }
+  },
+  {
+    "id": "dependence-009",
+    "topic": "dependence",
+    "difficulty": "C",
+    "answer": 0,
+    "ru": {
+      "stem": "Тормозной путь автомобиля примерно пропорционален квадрату его скорости. При скорости 40 км/ч тормозной путь равен 8 м. Каким он будет при скорости 80 км/ч?",
+      "options": [
+        "32 м",
+        "16 м",
+        "24 м",
+        "64 м"
+      ],
+      "explanation": "Скорость выросла в 2 раза, значит, тормозной путь вырастет в $2^2 = 4$ раза: $8 \\cdot 4 = 32$ м. Ответ 16 м был бы верен, если бы путь был пропорционален самой скорости."
+    },
+    "kz": {
+      "stem": "Автокөліктің тежелу жолы шамамен оның жылдамдығының квадратына пропорционал. 40 км/сағ жылдамдықта тежелу жолы 8 м. 80 км/сағ жылдамдықта ол қандай болады?",
+      "options": [
+        "32 м",
+        "16 м",
+        "24 м",
+        "64 м"
+      ],
+      "explanation": "Жылдамдық 2 есе артты, демек тежелу жолы $2^2 = 4$ есе артады: $8 \\cdot 4 = 32$ м. Егер жол жылдамдықтың өзіне пропорционал болса, 16 м шығар еді."
+    }
+  },
+  {
+    "id": "dependence-010",
+    "topic": "dependence",
+    "difficulty": "C",
+    "answer": 0,
+    "ru": {
+      "stem": "Электроэнергия оплачивается так: первые 100 кВт·ч — по 25 тг, каждый следующий — по 35 тг. График показывает сумму оплаты в зависимости от расхода. Семья заплатила за месяц 4950 тг. Сколько кВт·ч она израсходовала?",
+      "options": [
+        "170 кВт·ч",
+        "198 кВт·ч",
+        "141 кВт·ч",
+        "160 кВт·ч"
+      ],
+      "explanation": "За первые 100 кВт·ч: $100 \\cdot 25 = 2500$ тг. Остаток $4950 - 2500 = 2450$ тг оплачен по 35 тг: $2450 : 35 = 70$ кВт·ч. Всего: $100 + 70 = 170$ кВт·ч.",
+      "figure": "<svg viewBox=\"0 0 320 214\" xmlns=\"http://www.w3.org/2000/svg\" font-size=\"12\" fill=\"currentColor\"><line x1=\"42\" x2=\"308\" y1=\"182.0\" y2=\"182.0\" stroke=\"currentColor\" stroke-opacity=\"0.35\"/><text x=\"36\" y=\"186.0\" text-anchor=\"end\" font-size=\"10\" fill-opacity=\"0.7\">0</text><line x1=\"42\" x2=\"308\" y1=\"156.0\" y2=\"156.0\" stroke=\"currentColor\" stroke-opacity=\"0.12\"/><text x=\"36\" y=\"160.0\" text-anchor=\"end\" font-size=\"10\" fill-opacity=\"0.7\">1 000</text><line x1=\"42\" x2=\"308\" y1=\"130.0\" y2=\"130.0\" stroke=\"currentColor\" stroke-opacity=\"0.12\"/><text x=\"36\" y=\"134.0\" text-anchor=\"end\" font-size=\"10\" fill-opacity=\"0.7\">2 000</text><line x1=\"42\" x2=\"308\" y1=\"104.0\" y2=\"104.0\" stroke=\"currentColor\" stroke-opacity=\"0.12\"/><text x=\"36\" y=\"108.0\" text-anchor=\"end\" font-size=\"10\" fill-opacity=\"0.7\">3 000</text><line x1=\"42\" x2=\"308\" y1=\"78.0\" y2=\"78.0\" stroke=\"currentColor\" stroke-opacity=\"0.12\"/><text x=\"36\" y=\"82.0\" text-anchor=\"end\" font-size=\"10\" fill-opacity=\"0.7\">4 000</text><line x1=\"42\" x2=\"308\" y1=\"52.0\" y2=\"52.0\" stroke=\"currentColor\" stroke-opacity=\"0.12\"/><text x=\"36\" y=\"56.0\" text-anchor=\"end\" font-size=\"10\" fill-opacity=\"0.7\">5 000</text><line x1=\"42\" x2=\"308\" y1=\"26.0\" y2=\"26.0\" stroke=\"currentColor\" stroke-opacity=\"0.12\"/><text x=\"36\" y=\"30.0\" text-anchor=\"end\" font-size=\"10\" fill-opacity=\"0.7\">6 000</text><line x1=\"42.0\" x2=\"42.0\" y1=\"26\" y2=\"182\" stroke=\"currentColor\" stroke-opacity=\"0.35\"/><text x=\"42.0\" y=\"196\" text-anchor=\"middle\" font-size=\"10\" fill-opacity=\"0.7\">0</text><line x1=\"108.5\" x2=\"108.5\" y1=\"26\" y2=\"182\" stroke=\"currentColor\" stroke-opacity=\"0.12\"/><text x=\"108.5\" y=\"196\" text-anchor=\"middle\" font-size=\"10\" fill-opacity=\"0.7\">50</text><line x1=\"175.0\" x2=\"175.0\" y1=\"26\" y2=\"182\" stroke=\"currentColor\" stroke-opacity=\"0.12\"/><text x=\"175.0\" y=\"196\" text-anchor=\"middle\" font-size=\"10\" fill-opacity=\"0.7\">100</text><line x1=\"241.5\" x2=\"241.5\" y1=\"26\" y2=\"182\" stroke=\"currentColor\" stroke-opacity=\"0.12\"/><text x=\"241.5\" y=\"196\" text-anchor=\"middle\" font-size=\"10\" fill-opacity=\"0.7\">150</text><line x1=\"308.0\" x2=\"308.0\" y1=\"26\" y2=\"182\" stroke=\"currentColor\" stroke-opacity=\"0.12\"/><text x=\"308.0\" y=\"196\" text-anchor=\"middle\" font-size=\"10\" fill-opacity=\"0.7\">200</text><path d=\"M42.0,182.0 L175.0,117.0 L308.0,26.0\" fill=\"none\" stroke=\"var(--s1)\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><circle cx=\"42.0\" cy=\"182.0\" r=\"4\" fill=\"var(--s1)\" stroke=\"var(--card)\" stroke-width=\"2\"/><circle cx=\"175.0\" cy=\"117.0\" r=\"4\" fill=\"var(--s1)\" stroke=\"var(--card)\" stroke-width=\"2\"/><circle cx=\"308.0\" cy=\"26.0\" r=\"4\" fill=\"var(--s1)\" stroke=\"var(--card)\" stroke-width=\"2\"/><text x=\"308\" y=\"212\" text-anchor=\"end\" font-size=\"10\" fill-opacity=\"0.7\">кВт·ч</text><text x=\"4\" y=\"11\" font-size=\"10\" fill-opacity=\"0.7\">тг</text></svg>"
+    },
+    "kz": {
+      "stem": "Электр энергиясы былай төленеді: алғашқы 100 кВт·сағ — 25 теңгеден, әрбір келесісі — 35 теңгеден. Графикте төлем сомасының жұмсалған энергияға тәуелділігі көрсетілген. Отбасы бір айға 4950 теңге төледі. Ол неше кВт·сағ энергия жұмсады?",
+      "options": [
+        "170 кВт·сағ",
+        "198 кВт·сағ",
+        "141 кВт·сағ",
+        "160 кВт·сағ"
+      ],
+      "explanation": "Алғашқы 100 кВт·сағ үшін: $100 \\cdot 25 = 2500$ теңге. Қалған $4950 - 2500 = 2450$ теңге 35 теңгеден төленді: $2450 : 35 = 70$ кВт·сағ. Барлығы: $100 + 70 = 170$ кВт·сағ.",
+      "figure": "<svg viewBox=\"0 0 320 214\" xmlns=\"http://www.w3.org/2000/svg\" font-size=\"12\" fill=\"currentColor\"><line x1=\"42\" x2=\"308\" y1=\"182.0\" y2=\"182.0\" stroke=\"currentColor\" stroke-opacity=\"0.35\"/><text x=\"36\" y=\"186.0\" text-anchor=\"end\" font-size=\"10\" fill-opacity=\"0.7\">0</text><line x1=\"42\" x2=\"308\" y1=\"156.0\" y2=\"156.0\" stroke=\"currentColor\" stroke-opacity=\"0.12\"/><text x=\"36\" y=\"160.0\" text-anchor=\"end\" font-size=\"10\" fill-opacity=\"0.7\">1 000</text><line x1=\"42\" x2=\"308\" y1=\"130.0\" y2=\"130.0\" stroke=\"currentColor\" stroke-opacity=\"0.12\"/><text x=\"36\" y=\"134.0\" text-anchor=\"end\" font-size=\"10\" fill-opacity=\"0.7\">2 000</text><line x1=\"42\" x2=\"308\" y1=\"104.0\" y2=\"104.0\" stroke=\"currentColor\" stroke-opacity=\"0.12\"/><text x=\"36\" y=\"108.0\" text-anchor=\"end\" font-size=\"10\" fill-opacity=\"0.7\">3 000</text><line x1=\"42\" x2=\"308\" y1=\"78.0\" y2=\"78.0\" stroke=\"currentColor\" stroke-opacity=\"0.12\"/><text x=\"36\" y=\"82.0\" text-anchor=\"end\" font-size=\"10\" fill-opacity=\"0.7\">4 000</text><line x1=\"42\" x2=\"308\" y1=\"52.0\" y2=\"52.0\" stroke=\"currentColor\" stroke-opacity=\"0.12\"/><text x=\"36\" y=\"56.0\" text-anchor=\"end\" font-size=\"10\" fill-opacity=\"0.7\">5 000</text><line x1=\"42\" x2=\"308\" y1=\"26.0\" y2=\"26.0\" stroke=\"currentColor\" stroke-opacity=\"0.12\"/><text x=\"36\" y=\"30.0\" text-anchor=\"end\" font-size=\"10\" fill-opacity=\"0.7\">6 000</text><line x1=\"42.0\" x2=\"42.0\" y1=\"26\" y2=\"182\" stroke=\"currentColor\" stroke-opacity=\"0.35\"/><text x=\"42.0\" y=\"196\" text-anchor=\"middle\" font-size=\"10\" fill-opacity=\"0.7\">0</text><line x1=\"108.5\" x2=\"108.5\" y1=\"26\" y2=\"182\" stroke=\"currentColor\" stroke-opacity=\"0.12\"/><text x=\"108.5\" y=\"196\" text-anchor=\"middle\" font-size=\"10\" fill-opacity=\"0.7\">50</text><line x1=\"175.0\" x2=\"175.0\" y1=\"26\" y2=\"182\" stroke=\"currentColor\" stroke-opacity=\"0.12\"/><text x=\"175.0\" y=\"196\" text-anchor=\"middle\" font-size=\"10\" fill-opacity=\"0.7\">100</text><line x1=\"241.5\" x2=\"241.5\" y1=\"26\" y2=\"182\" stroke=\"currentColor\" stroke-opacity=\"0.12\"/><text x=\"241.5\" y=\"196\" text-anchor=\"middle\" font-size=\"10\" fill-opacity=\"0.7\">150</text><line x1=\"308.0\" x2=\"308.0\" y1=\"26\" y2=\"182\" stroke=\"currentColor\" stroke-opacity=\"0.12\"/><text x=\"308.0\" y=\"196\" text-anchor=\"middle\" font-size=\"10\" fill-opacity=\"0.7\">200</text><path d=\"M42.0,182.0 L175.0,117.0 L308.0,26.0\" fill=\"none\" stroke=\"var(--s1)\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><circle cx=\"42.0\" cy=\"182.0\" r=\"4\" fill=\"var(--s1)\" stroke=\"var(--card)\" stroke-width=\"2\"/><circle cx=\"175.0\" cy=\"117.0\" r=\"4\" fill=\"var(--s1)\" stroke=\"var(--card)\" stroke-width=\"2\"/><circle cx=\"308.0\" cy=\"26.0\" r=\"4\" fill=\"var(--s1)\" stroke=\"var(--card)\" stroke-width=\"2\"/><text x=\"308\" y=\"212\" text-anchor=\"end\" font-size=\"10\" fill-opacity=\"0.7\">кВт·сағ</text><text x=\"4\" y=\"11\" font-size=\"10\" fill-opacity=\"0.7\">теңге</text></svg>"
+    }
+  }
+]
