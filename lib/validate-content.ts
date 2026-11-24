@@ -23,7 +23,9 @@ export function validateContent(files: Record<string, unknown> = QUESTION_FILES)
       ids.add(q.id);
       if (q.topic !== file) errors.push(`${at}: тема ${q.topic} лежит в файле ${file}`);
       if (!q.id.startsWith(`${q.topic}-`)) errors.push(`${at}: id должен начинаться с ${q.topic}-`);
-      if (q.figure && /<script|on\w+=|javascript:/i.test(q.figure)) errors.push(`${at}: недопустимое в SVG`);
+      const unsafe = (svg?: string) => !!svg && /<script|<foreignObject|\son\w+\s*=|javascript:|href\s*=\s*["']?(?!#)/i.test(svg);
+      if ([q.figure, q.ru.figure, q.kz.figure].some(unsafe)) errors.push(`${at}: недопустимое в SVG`);
+      if (!!q.ru.figure !== !!q.kz.figure) errors.push(`${at}: языковой рисунок есть только на одном языке`);
 
       for (const lang of ["ru", "kz"] as const) {
         const l: LocalizedQuestion = q[lang];

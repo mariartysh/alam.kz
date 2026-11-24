@@ -31,7 +31,7 @@ export async function getQuestion(id: string) {
 export function toPublic(q: QuestionRow, lang: Lang, seed: string): PublicQuestion {
   const c = q.content[lang] ?? q.content.ru;
   return {
-    id: q.id, topic: q.topic_id, difficulty: q.difficulty, figure: q.figure,
+    id: q.id, topic: q.topic_id, difficulty: q.difficulty, figure: c.figure ?? q.figure,
     stem: c.stem, table: c.table,
     options: shuffled(c.options.map((text, idx) => ({ idx, text })), seed),
   };

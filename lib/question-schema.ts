@@ -13,6 +13,8 @@ const Localized = z.object({
   options: z.array(z.string().min(1)).length(EXAM.optionsCount),
   explanation: z.string().min(10),
   table: Table.optional(),
+  /** Рисунок с подписями на этом языке (диаграммы). Перекрывает общий figure. */
+  figure: z.string().startsWith("<svg").optional(),
 });
 
 export const QuestionSchema = z.object({

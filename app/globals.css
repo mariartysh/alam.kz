@@ -15,6 +15,8 @@
   --border: color-mix(in srgb, var(--text) 10%, transparent);
   --ok: #16a34a;
   --bad: #dc2626;
+  /* Категориальная палитра диаграмм (фиксированный порядок, проверена на дальтонизм для соседних пар). */
+  --s1: #2a78d6; --s2: #eb6834; --s3: #1baf7a; --s4: #eda100; --s5: #e87ba4; --s6: #008300;
   color-scheme: light;
 }
 
@@ -28,6 +30,7 @@
     --card: var(--tg-theme-section-bg-color, #1c2029);
     --ok: #22c55e;
     --bad: #f87171;
+    --s1: #3987e5; --s2: #d95926; --s3: #199e70; --s4: #c98500; --s5: #d55181; --s6: #0ca30c;
     color-scheme: dark;
   }
 }
@@ -40,6 +43,7 @@
   --card: var(--tg-theme-section-bg-color, #1c2029);
   --ok: #22c55e;
   --bad: #f87171;
+  --s1: #3987e5; --s2: #d95926; --s3: #199e70; --s4: #c98500; --s5: #d55181; --s6: #0ca30c;
   color-scheme: dark;
 }
 
