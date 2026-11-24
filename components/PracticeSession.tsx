@@ -5,6 +5,7 @@ import Link from "next/link";
 import type { PublicQuestion } from "@/lib/questions";
 import { fmt } from "@/lib/i18n";
 import { haptics } from "@/lib/haptics";
+import { post } from "@/lib/api-client";
 import { QuestionView, type OptionState } from "./QuestionView";
 import { RichText } from "./RichText";
 
@@ -12,12 +13,6 @@ type Texts = Record<
   "progress" | "correct" | "wrong" | "explanation" | "next" | "finish" | "done" | "score" | "again" |
   "toTopics" | "mistakesHint" | "error" | "loading" | "diffA" | "diffB" | "diffC", string>;
 type Result = { correct: boolean; answer: number; chosen: number; explanation: string };
-
-async function post<T>(url: string, data: unknown): Promise<T> {
-  const r = await fetch(url, { method: "POST", headers: { "content-type": "application/json" }, body: JSON.stringify(data) });
-  if (!r.ok) throw new Error(String(r.status));
-  return r.json();
-}
 
 export function PracticeSession({ topic, texts }: { topic: string; texts: Texts }) {
   const [attemptId, setAttemptId] = useState<string | null>(null);
